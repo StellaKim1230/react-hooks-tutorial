@@ -17,6 +17,7 @@ Info.js 참고
 ### 2. useEffect
 
 리액트 컴포넌트가 렌더링 될 때마다 특정 작업을 수행하도록 설정해준다. 클래스형 컴포넌트 라이프사이클중 `componentDidMount` 와 `componentDidUpdate` 라고 할수 있다.
+useEffect는 기본적으로 렌더링 되고난 직후마다 실행되며, 두번째 파라미터 배열에 무엇을 넣느냐에 따라 실행되는 조건이 달라진다.
 
 #### 2.1 useEffect 마운트 될 때만 실행하고 싶을 때
 
@@ -27,5 +28,19 @@ useEffect(() => {
   console.log('마운트 될 때만 실행됩니다')
 }, [])
 ```
+
+#### 2.2 특정 값이 업데이트 될 때만 실행하고 싶을 때
+
+```
+useEffect(() => {
+  console.log(name)
+}, [name])
+```
+
+#### 2.3 컴포넌트가 언마운트되기 전이나, 업데이트 되기 직전에 어떠한 작업을 수행하고 싶을 때 useEffect에서 뒷정리(cleanup) 함수를 반환해줘야 한다
+
+useEffect 안에서 함수를 리턴한다.
+
+### 3. useContext
 
 [참고자료](https://velog.io/@velopert/react-hooks)
