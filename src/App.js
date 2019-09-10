@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import Counter from './Counter'
 import Info from './Info'
+import ContextSample from './ContextSample'
+import CounterUseReducer from './CounterUseReducer'
+import InfoUserReducer from './InfoUserReducer'
+import Average from './Average'
 import './App.css';
 
 function App() {
@@ -18,6 +22,10 @@ function App() {
       </button>
       <hr />
       {visible && <Info />}
+      <ContextSample />
+      <CounterUseReducer />
+      <InfoUserReducer />
+      <Average />
     </>
   );
 }
