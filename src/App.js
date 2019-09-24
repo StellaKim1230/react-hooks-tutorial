@@ -5,6 +5,7 @@ import ContextSample from './components/ContextSample'
 import CounterUseReducer from './components/CounterUseReducer'
 import InfoUserReducer from './components/InfoUserReducer'
 import Average from './components/Average'
+import User from './components/User'
 import './App.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <>
+    <User/>
       <Counter />
       <button
         onClick={() => {
