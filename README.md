@@ -43,6 +43,15 @@ useEffect 안에서 함수를 리턴한다.
 
 ### 3. useContext
 
+Context 의 용도
+
+- 주로, 애플리케이션에서 전역적으로 데이터가 사용되어야 할 때 사용됩니다.
+- redux, react-router, styled-components 등의 기존에 이 Context API를 기반으로 구현이 되었다.
+
+Context 의 생성
+
+- createContext 함수를 호출하면 Provider 와 Consumer 라는 컴포넌트들이 반환된다. Provider 는 Context 에서 사용할 값을 설정할 때 사용하고, Consumer 는 나중에 우리가 설정한 값을 불러와야 할 때 사용한다.
+
 ### 4. useReducer
 
 useState 보다 컴포넌트에서 더 다양한 상황에 따라 다양한 상태를 다른 값으로 업데이트해주고 싶을 때 사용하는 Hook이다.
