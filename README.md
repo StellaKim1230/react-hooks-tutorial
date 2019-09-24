@@ -46,6 +46,11 @@ useEffect 안에서 함수를 리턴한다.
 ### 4. useReducer
 
 useState 보다 컴포넌트에서 더 다양한 상황에 따라 다양한 상태를 다른 값으로 업데이트해주고 싶을 때 사용하는 Hook이다.
+userReducer 파일
+
+- useState와 비슷하게 return 배열의 첫번째는 state가, 두번째는 state를 변경하는 함수가 있다.
+- useState의 state를 변경하는 함수는 넘긴 값을 그대로 다음 state로 사용하지만, useReducer의 state를 변경하는 함수는
+  reducer를 거치면서 추가적으로 가공한 state로 사용 할 수 있다.
 
 ### 5. useMemo
 
