@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import Counter from './Counter'
-import Info from './Info'
-import ContextSample from './ContextSample'
-import CounterUseReducer from './CounterUseReducer'
-import InfoUserReducer from './InfoUserReducer'
-import Average from './Average'
+import Counter from './components/Counter'
+import Info from './components/Info'
+import ContextSample from './components/ContextSample'
+import CounterUseReducer from './components/CounterUseReducer'
+import InfoUserReducer from './components/InfoUserReducer'
+import Average from './components/Average'
 import './App.css';
 
 function App() {
