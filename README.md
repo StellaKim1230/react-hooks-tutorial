@@ -1,4 +1,4 @@
-## React 16.8 hooks tutorial
+## React 16.8 hooks tutorial & 컴포넌트 만들기
 
 hooks는 v16.8에 새로 도입된 기능이다.
 
